@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    window.onload = function() {
+        alert("Welcome Student");
+    }
+
+    function printStudentList() {
+        window.print();
+    }
+</script>
+
+<h1>Student Information</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course&Year</th>
+            <th>Subject</th>
+            <th>Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>sen iloilo</td>
+            <td>19</td>
+            <td>BSIT-1</td>
+            <td>ComProg</td>
+            <td>93.5</td>
+        </tr>
+
+        <tr>
+            <td>vin killo</td>
+            <td>23</td>
+            <td>BSIT-3</td>
+            <td>Networking 3</td>
+            <td>91.4</td>
+        </tr>
+        
+        <tr>
+            <td>kelvs hillo</td>
+            <td>18</td>
+            <td>BSIT-1</td>
+            <td>ComProg</td>
+            <td>88.5</td>
+        </tr>
+    </tbody>
+</table>
+
+<button onclick="printStudentList()">Print Student List</button>
+
+</body>
+</html>
